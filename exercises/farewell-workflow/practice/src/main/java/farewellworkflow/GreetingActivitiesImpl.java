@@ -1,10 +1,11 @@
 package farewellworkflow;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLEncoder;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
+
 import io.temporal.activity.Activity;
 
 public class GreetingActivitiesImpl implements GreetingActivities {
@@ -12,6 +13,11 @@ public class GreetingActivitiesImpl implements GreetingActivities {
     @Override
     public String greetInSpanish(String name) {
         return callService("get-spanish-greeting", name);
+    }
+
+    @Override
+    public String farewellInSPanish(String name) {
+        return callService("get-spanish-farewell", name);
     }
 
     /* TODO: Implement the Activity method that was defined in the
@@ -29,8 +35,9 @@ public class GreetingActivitiesImpl implements GreetingActivities {
 
         URL url = null;
         try {
-            url = new URL(String.format(baseUrl, stem, URLEncoder.encode(name, "UTF-8")));
-        } catch (IOException e) {
+            String urlString = String.format(baseUrl, stem, URLEncoder.encode(name, "UTF-8"));
+            url = new java.net.URI(urlString).toURL();
+        } catch (Exception e) {
             throw Activity.wrap(e);
         }
 

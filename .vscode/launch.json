@@ -1,0 +1,122 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "GreetingWorker",
+            "request": "launch",
+            "mainClass": "farewellworkflow.GreetingWorker",
+            "projectName": "farewell-workflow-practice"
+        },
+        {
+            "type": "java",
+            "name": "Microservice",
+            "request": "launch",
+            "mainClass": "farewellworkflow.Microservice",
+            "projectName": "farewell-workflow-practice"
+        },
+        {
+            "type": "java",
+            "name": "Starter",
+            "request": "launch",
+            "mainClass": "farewellworkflow.Starter",
+            "projectName": "farewell-workflow-practice",
+            "args": ["Santosh"]
+        },
+        {
+            "type": "java",
+            "name": "GreetingWorker(1)",
+            "request": "launch",
+            "mainClass": "farewellworkflow.GreetingWorker",
+            "projectName": "farewell-workflow-solution"
+        },
+        {
+            "type": "java",
+            "name": "Microservice(1)",
+            "request": "launch",
+            "mainClass": "farewellworkflow.Microservice",
+            "projectName": "farewell-workflow-solution"
+        },
+        {
+            "type": "java",
+            "name": "Starter(1)",
+            "request": "launch",
+            "mainClass": "farewellworkflow.Starter",
+            "projectName": "farewell-workflow-solution"
+        },
+        {
+            "type": "java",
+            "name": "FinaleWorker",
+            "request": "launch",
+            "mainClass": "finale.FinaleWorker",
+            "projectName": "finale-workflow"
+        },
+        {
+            "type": "java",
+            "name": "Starter(2)",
+            "request": "launch",
+            "mainClass": "finale.Starter",
+            "projectName": "finale-workflow"
+        },
+        {
+            "type": "java",
+            "name": "Starter(3)",
+            "request": "launch",
+            "mainClass": "greeting.Starter",
+            "projectName": "greeting-sample"
+        },
+        {
+            "type": "java",
+            "name": "GreetingWorker(2)",
+            "request": "launch",
+            "mainClass": "greetingworkflow.GreetingWorker",
+            "projectName": "greeting-workflow-demo"
+        },
+        {
+            "type": "java",
+            "name": "Microservice(2)",
+            "request": "launch",
+            "mainClass": "greetingworkflow.Microservice",
+            "projectName": "greeting-workflow-demo"
+        },
+        {
+            "type": "java",
+            "name": "Starter(4)",
+            "request": "launch",
+            "mainClass": "greetingworkflow.Starter",
+            "projectName": "greeting-workflow-demo"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorkflowWorker",
+            "request": "launch",
+            "mainClass": "helloworkflow.HelloWorkflowWorker",
+            "projectName": "hello-workflow-practice"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorkflowWorker(1)",
+            "request": "launch",
+            "mainClass": "helloworkflow.HelloWorkflowWorker",
+            "projectName": "hello-workflow-solution"
+        },
+        {
+            "type": "java",
+            "name": "Starter(5)",
+            "request": "launch",
+            "mainClass": "workflowdefinition.Starter",
+            "projectName": "workflow-definition-demo"
+        }
+    ]
+}
